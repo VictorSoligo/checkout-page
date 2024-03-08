@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--grey);
-    border-bottom: 1px solid var(--divdier);
+    border-bottom: 1px solid var(--divider);
     padding: 16px 0;
     gap: 32px;
 }
