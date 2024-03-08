@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="js/cep-fetcher.js" defer></script>
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Example Store</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="checkout-steps">
+        <div class="checkout-step active">
+            <span class="active">
+                1
+            </span>
+
+            <p>Endereço</p>
+        </div>
+
+        <div class="step-divider"></div>
+
+        <div class="checkout-step">
+            <span>
+                2
+            </span>
+
+            <p>Cobrança</p>
+        </div>
+
+        <div class="step-divider"></div>
+
+        <div class="checkout-step">
+            <span>
+                3
+            </span>
+
+            <p>Revisão do pedido</p>
+        </div>
+    </section>
+
+    <section class="checkout">
+        <div class="checkout-container">
+            <div class="checkout-header">
+                <h2>Endereço para entrega</h2>
+
+                <p>Preencha com atenção o seu endereço.</p>
+            </div>
+
+            <div class="card">
+                <form class="adress-form">
+                    <div class="adress-form-inputs">
+                        <div class="form-control" style="grid-area: cep;">
+                            <label for="cep">CEP</label>
+                            <input id="cep" type="text" onblur="fillAdressInputs()">
+                        </div>
+    
+                        <div class="form-control" style="grid-area: fu;">
+                            <label for="fu">UF</label>
+                            <input id="fu" type="text">
+                        </div>
+    
+                        <div class="form-control" style="grid-area: city;">
+                            <label for="city">Cidade</label>
+                            <input id="city" type="text">
+                        </div>
+    
+                        <div class="form-control" style="grid-area: neighborhood;">
+                            <label for="neighborhood">Bairro</label>
+                            <input id="neighborhood" type="text">
+                        </div>
+    
+                        <div class="form-control" style="grid-area: street;">
+                            <label for="street">Rua</label>
+                            <input id="street" type="text">
+                        </div>
+    
+                        <div class="form-control" style="grid-area: number;">
+                            <label for="number">Número</label>
+                            <input id="number" type="number">
+                        </div>
+    
+                        <div class="form-control" style="grid-area: complement;">
+                            <label for="complement">Complemento</label>
+                            <input id="complement" type="text">
+                        </div>
+                    </div>
+
+                    <footer>
+                        <button type="submit">Próximo passo</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

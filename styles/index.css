@@ -1,0 +1,170 @@
+:root {
+    --primary: #000;
+    --white: #fff;
+    --grey: #f9fafb;
+    --green: #14b8a6;
+    --divider: #e4e4e7;
+}
+
+.app-header {
+    height: 56px;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 1140px;
+}
+
+.app-header h1 {
+    font-size: 1.4rem;
+}
+
+.checkout-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+    border-bottom: 1px solid var(--divdier);
+    padding: 16px 0;
+    gap: 32px;
+}
+
+.checkout-step {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.checkout-step span {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 50%;
+    font-size: 0.85rem;
+}
+
+.checkout-step span.active {
+    background-color: var(--primary);
+}
+
+.checkout-step p {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.step-divider {
+    display: flex;
+    width: 12px;
+    height: 2px;
+    background: var(--divider);
+}
+
+.checkout {
+    display: flex;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1140px;
+    padding: 32px 0;
+    gap: 32px;
+}
+
+.checkout-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkout-header h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.checkout-header p {
+    font-size: 0.875rem;
+    color: #71717a
+}
+
+.card {
+    display: flex;
+    padding: 32px;
+    border: 1px solid var(--divider);
+    border-radius: 6px;
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.form-control label {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.form-control input {
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    padding: 8px;
+    outline: none;
+}
+
+.form-control input:focus {
+    border: 1px solid var(--primary);
+}
+
+
+.form-control input:hover {
+    border: 1px solid var(--primary);
+}
+
+.adress-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.adress-form-inputs {
+    display: grid;
+    width: 100%;
+    gap: 16px;
+    grid-template-areas:
+        "cep cep fu city"
+        "neighborhood neighborhood street number"
+        "complement complement complement complement";
+}
+
+.adress-form footer {
+    display: flex;
+    justify-content: end;
+}
+
+.adress-form button {
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.adress-form button:hover {
+    opacity: 0.8;
+}
